@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1b1b1b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        }
+
+        nav ul li {
+        margin: 0 15px;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: #1b1b1b;
+            border: 1px solid #00ff00;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+        }
+        .product img {
+            max-height: 40%;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .checkout-button {
+            display: block;
+            width: 80%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+            
+        }
+        .checkout-button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            background-color: #1b1b1b;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Razer</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#products">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="none.html">Cart</a>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <h1>Unleash Your Gaming Potential</h1>
+        <p>Discover the latest in gaming technology</p>
+    </div>
+
+    <section id="products" class="products">
+        <div class="product">
+            <img src="prod/product3.webp" alt="Razer Product 1"> 
+            <h3>Razer PC</h3>
+            <center><a href="test.html" class="checkout-button">click</a></center>
+        </div>
+        <div class="product">
+            <img src="prod/con1.png" alt="Razer Product 2"> 
+            <h3>Razer Console</h3>
+            <center><a href="con.html" class="checkout-button">click</a></center>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Razer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
